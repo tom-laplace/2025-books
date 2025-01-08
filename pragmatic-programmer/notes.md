@@ -98,3 +98,17 @@ Make what you're saying relevant in time, as well as in content. Ask yourself "I
 
 **Documentation**: Embrace documentation as an integral part of the overall dev process. But don't comment **everything**.
 Commenting code gives you the perfect opportunity to document those elusive bits of project that can't be documented anywhere else.
+
+## Chapter 2 : A Pragmatic Approach
+
+### Topic 8 : The Essence of Good Design
+
+ETC principle : Easier to change. ETC.
+
+You may need to spend a week or so deliberately asking yourself “did the thing I just did make the overall system easier or harder to change?” Do it when you save a file. Do it when you write a test. Do it when you fix a bug.
+
+### Topic 9 : DRY - The Evils of Duplication
+
+> "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
+
+### Topic 10 : Orthogonality
