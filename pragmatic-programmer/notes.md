@@ -112,3 +112,91 @@ You may need to spend a week or so deliberately asking yourself “did the thing
 > "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system."
 
 ### Topic 10 : Orthogonality
+
+Two or more things are orthogonal if changes in one do not affect any of the others.
+
+Major benefits :
+
+- Gain Productivity (smaller components, more reusable, can do more things when combined)
+- Reduce Risk (fewer things to change when one thing changes, code is more isolated so less to break)
+
+> Don't rely on the properties of things you can't control.
+
+Be careful when introducing a toolkit or library.
+
+When coding :
+
+- Keep your code decoupled
+- Avoid gloabl data
+- Avoid similar functions
+
+=> Be constantly critical of your code, and thus, refactor it.
+
+### Topic 11 : Reversibility
+
+Requirements, users, and hardware change faster than we can get the software developed.
+
+Instead of carving decisions in stone, think of them more as being written in the sand at the beach. A big wave can come along and wipe them out at any time.
+
+What you can do is make it easy to change. Hide third-party APIs behind your own abstraction layers. Break your code into components: even if you end up deploying them on a single massive server, this approach is a lot easier than taking a monolithic application and splitting it.
+
+### Topic 12 : Tracer Bullets
+
+Look for the important requirements, the ones that define the system. Look for the areas where you have doubts, and where you see the biggest risks. Then prioritize your development so that these are the first areas you code.
+
+In fact, given the complexity of today's project setup, with swarms of external dependencies and tools, tracer bullets become even more important. *For us, the very first tracer bullet is simply create the project, add a “hello world!,” and make sure it compiles and runs.*
+
+Tracer code advantages :
+
+- Users get to see something working early
+- Developers build a structure to work in
+- You have an intergration platform
+- You have something to demonstrate
+- You have a better feel for progress
+
+Prototyping generates disposable code. Tracer code is lean but complete, and forms part of the skeleton of the final system.
+
+### Topic 13 : Prototypes and Post-it Notes
+
+We tend to think of prototypes as code-based, but they don't always have to be. Like the car makers, we can build prototypes out of different materials. Post-it notes are great for prototyping dynamic things such as workflow and application logic. A user interface can be prototyped as a drawing on a whiteboard, as a nonfunctional mock-up drawn with a paint program, or with an interface builder.
+
+You can prototype :
+
+- Architecture
+- New functionality in an existing system
+- Structure or contents of external data
+- Third-party tools or components
+- Performance issues
+- User interface design
+
+What can we ignore when prototyping ?
+
+- Correctness
+- Completeness
+- Robustness
+- Style
+
+### Topic 14 : Domain Languages
+
+### Topic 15 : Estimating
+
+Scale time estimation as follows :
+
+- 1/15 days => Days
+- 3/6 weeks => Weeks
+- 8/20 weeks => Months
+- 20+ weeks => Think hard before giving an estimate
+
+Understand what's being asked, think about the scope before starting to guess.
+
+Build a Model of the System : What are the major components, and how do they interact ?
+
+Estimate the effort of each component, and the effort of the system as a whole.
+
+Give each component a value then calculate the total effort.
+
+**Keep Track of Your Estimating Progress** : Keep a record of your estimations and if they were accurate. When an estimate turns out to be wrong, find out why.
+
+When asked for an estimate, say "i'll get back to you later".
+
+## Chapter 3 : The Basic Tools
